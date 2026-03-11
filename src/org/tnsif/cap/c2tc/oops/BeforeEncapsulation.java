@@ -1,6 +1,6 @@
 package org.tnsif.cap.c2tc.oops;
 
-class Human
+class Human 
 {
 	 int age;
 	 String name;

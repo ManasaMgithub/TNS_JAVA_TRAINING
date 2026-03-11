@@ -1,6 +1,6 @@
 package org.tnsif.cap.c2tc.jr_developer;
 
-public class KIA_AirBags {
+public class KIA_AirBags { 
 	
 
    public void disp_AirBags()

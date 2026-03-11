@@ -9,4 +9,4 @@ public class LangExample {
 		System.out.println("Lowercase "+greeting.toLowerCase());
 	}
 
-}
+} 

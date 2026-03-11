@@ -1,6 +1,6 @@
 package org.tnsif.cap.c2tc.javabasics;
 
-public class TypeCastingDemo {
+public class TypeCastingDemo { 
 
 	public static void main(String[] args) {
 		//widening (small -large)

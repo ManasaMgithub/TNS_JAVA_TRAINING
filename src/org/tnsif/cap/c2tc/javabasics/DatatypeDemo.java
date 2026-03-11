@@ -3,7 +3,7 @@ package org.tnsif.cap.c2tc.javabasics;
 public class DatatypeDemo {
 
 	public static void main(String[] args) {
-		//primitive datatype
+		//primitive datatype 
 		int orderid=101;
 		double price=299.99;
 		boolean isDelivered=false;

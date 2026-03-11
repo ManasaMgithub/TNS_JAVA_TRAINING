@@ -19,7 +19,7 @@ class Human1
 	public String getName() {
 		return name;
 	}
-	
+	 
 	
 }
 public class AfterEncapsulation {

@@ -1,5 +1,5 @@
 package org.tnsif.cap.c2tc.javabasics;
-
+ 
 public class VariableDemo {
 	int price=10; //instance variable
 	
@@ -9,7 +9,7 @@ public class VariableDemo {
 		System.out.println(msg);
 		
 	}
-	static String message ="Hello Students"; //static var
+	static String message ="Hello Students";  //static var
 
 	public static void main(String[] args) {
 		VariableDemo obj=new VariableDemo();

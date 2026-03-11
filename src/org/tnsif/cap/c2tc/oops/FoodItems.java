@@ -29,7 +29,7 @@ public class FoodItems {
 		FoodItems obj2=new FoodItems();
 		obj2.name="Panner Pizza";
 		obj2.price=300;
-		obj2.category="Italian";
+		obj2.category="Italian"; 
 		
 		FoodItems obj3=new FoodItems();
 		obj3.name="Cold coffee";
