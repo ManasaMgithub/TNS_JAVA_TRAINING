@@ -1,48 +1,10 @@
 package org.tns.capgemini.c2tc.interfacedemo;
+import java.lang.FunctionalInterface;
 
-interface Vehicle7
-{
-	void start();
+@FunctionalInterface
+public interface InterfaceDemo3 {
 	
-	void stop();
-}
+	public abstract void sayHello(String Name); //functional method
 
-interface Electrivehicle extends  Vehicle7
-{
-	void chargeBattery();
-}
-
-class Tesla implements Electrivehicle
-{
-
-	@Override
-	public void start() {
-		System.out.println("vehicle is starting");
-		
-	}
-
-	@Override
-	public void stop() {
-		System.out.println("vehicle is stopping");
-		
-	}
-
-	@Override
-	public void chargeBattery() {
-		System.out.println("Battery is charged");
-		
-	}
-	
-}
-public class Interface_imp_Interface {
-
-	public static void main(String[] args) {
-		Tesla tesla=new Tesla();
-		tesla.start();
-		tesla.stop();
-		tesla.chargeBattery();
-		
-
-	}
 
 }
