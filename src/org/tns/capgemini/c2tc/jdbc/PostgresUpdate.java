@@ -1,11 +1,10 @@
-package org.tnsif.capgemini.c2tc.jdbc;
-
+package org.tns.capgemini.c2tc.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class PostgresSelect {
+public class PostgresUpdate {
 	   public static void main( String args[] ) {
 	      Connection c = null;
 	      Statement stmt = null;
@@ -18,6 +17,10 @@ public class PostgresSelect {
 	         System.out.println("Opened database successfully");
 
 	         stmt = c.createStatement();
+	         String sql = "UPDATE COMPANY set SALARY = 45000.00 where ID=7;";
+	         stmt.executeUpdate(sql);
+	         c.commit();
+
 	         ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
 	         while ( rs.next() ) {
 	            int id = rs.getInt("id");

@@ -1,4 +1,4 @@
-package org.tnsif.capgemini.c2tc.jdbc;
+package org.tns.capgemini.c2tc.jdbc;
 
 
 import java.sql.Connection;//Represents a connection to the database.

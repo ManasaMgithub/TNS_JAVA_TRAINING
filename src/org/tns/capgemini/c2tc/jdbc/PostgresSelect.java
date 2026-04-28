@@ -1,10 +1,11 @@
-package org.tnsif.capgemini.c2tc.jdbc;
+package org.tns.capgemini.c2tc.jdbc;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class PostgresDelete {
+public class PostgresSelect {
 	   public static void main( String args[] ) {
 	      Connection c = null;
 	      Statement stmt = null;
@@ -17,13 +18,7 @@ public class PostgresDelete {
 	         System.out.println("Opened database successfully");
 
 	         stmt = c.createStatement();
-	         String sql = "DELETE from COMPANY where ID = 8;";
-	         stmt.executeUpdate(sql);
-	         c.commit();
-//The result of this query is stored in a (Class)ResultSet (rs), which is a special object that holds the rows of data returned by the query.
 	         ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-//The ResultSet (rs) contains multiple rows of data. The method rs.next() moves the cursor to the next row in the result set.
-	         //It returns true as long as there are more rows to process, and false when no rows are left.	         
 	         while ( rs.next() ) {
 	            int id = rs.getInt("id");
 	            String  name = rs.getString("name");
@@ -47,7 +42,3 @@ public class PostgresDelete {
 	      System.out.println("Operation done successfully");
 	   }
 	}
-
-
-
-
